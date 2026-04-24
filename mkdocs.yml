@@ -122,6 +122,8 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  - zensical.extensions.glightbox:
+      auto_themed: true
   - zensical.extensions.preview:
       targets:
         include:

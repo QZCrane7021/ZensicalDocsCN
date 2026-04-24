@@ -375,13 +375,13 @@ following lines to your configuration:
 
 ===! "With tabs"
 
-    [![Navigation tabs enabled]][Navigation tabs enabled]
-    [![Navigation tabs enabled dark]][Navigation tabs enabled dark]
+    ![Navigation tabs enabled]
+    ![Navigation tabs enabled dark]
 
 === "Without"
 
-    [![Navigation tabs disabled]][Navigation tabs disabled]
-    [![Navigation tabs disabled dark]][Navigation tabs disabled dark]
+    ![Navigation tabs disabled]
+    ![Navigation tabs disabled dark]
 
   [Navigation tabs enabled]: ../assets/screenshots/navigation-tabs.png#gh-light-mode-only
   [Navigation tabs enabled dark]: ../assets/screenshots/navigation-tabs-dark.png#gh-dark-mode-only
@@ -438,13 +438,13 @@ following lines to your configuration:
 
 ===! "With sections"
 
-    [![Navigation sections enabled]][Navigation sections enabled]
-    [![Navigation sections enabled dark]][Navigation sections enabled dark]
+    ![Navigation sections enabled]
+    ![Navigation sections enabled dark]
 
 === "Without"
 
-    [![Navigation sections disabled]][Navigation sections disabled]
-    [![Navigation sections disabled dark]][Navigation sections disabled dark]
+    ![Navigation sections disabled]
+    ![Navigation sections disabled dark]
 
   [Navigation sections enabled]: ../assets/screenshots/navigation-sections.png#gh-light-mode-only
   [Navigation sections enabled dark]: ../assets/screenshots/navigation-sections-dark.png#gh-dark-mode-only
@@ -479,13 +479,13 @@ Add the following lines to your configuration:
 
 ===! "With expansion"
 
-    [![Navigation expansion enabled]][Navigation expansion enabled]
-    [![Navigation expansion enabled dark]][Navigation expansion enabled dark]
+    ![Navigation expansion enabled]
+    ![Navigation expansion enabled dark]
 
 === "Without"
 
-    [![Navigation expansion disabled]][Navigation expansion disabled]
-    [![Navigation expansion disabled dark]][Navigation expansion disabled dark]
+    ![Navigation expansion disabled]
+    ![Navigation expansion disabled dark]
 
   [Navigation expansion enabled]: ../assets/screenshots/navigation-expand.png#gh-light-mode-only
   [Navigation expansion enabled dark]: ../assets/screenshots/navigation-expand-dark.png#gh-dark-mode-only
@@ -518,13 +518,13 @@ your configuration:
 
 ===! "With breadcrumbs"
 
-    [![Navigation path enabled]][Navigation path enabled]
-    [![Navigation path enabled dark]][Navigation path enabled dark]
+    ![Navigation path enabled]
+    ![Navigation path enabled dark]
 
 === "Without"
 
-    [![Navigation path disabled]][Navigation path disabled]
-    [![Navigation path disabled dark]][Navigation path disabled dark]
+    ![Navigation path disabled]
+    ![Navigation path disabled dark]
 
   [Navigation path enabled]: ../assets/screenshots/navigation.png#gh-light-mode-only
   [Navigation path enabled dark]: ../assets/screenshots/navigation-dark.png#gh-dark-mode-only
@@ -692,13 +692,13 @@ to your configuration:
 
 ===! "With navigation integration"
 
-    [![Navigation integration enabled]][Navigation integration enabled]
-    [![Navigation integration enabled dark]][Navigation integration enabled dark]
+    ![Navigation integration enabled]
+    ![Navigation integration enabled dark]
 
 === "Without"
 
-    [![Navigation integration disabled]][Navigation integration disabled]
-    [![Navigation integration disabled dark]][Navigation integration disabled dark]
+    ![Navigation integration disabled]
+    ![Navigation integration disabled dark]
 
   [table of contents]: extensions/python-markdown.md#table-of-contents
   [Navigation integration enabled]: ../assets/screenshots/toc-integrate.png#gh-light-mode-only

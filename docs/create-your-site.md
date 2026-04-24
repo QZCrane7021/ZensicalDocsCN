@@ -80,8 +80,8 @@ zensical serve
 
 Point your browser to [localhost:8000][live preview] and you should see:
 
-[![Creating your site]][Creating your site]
-[![Creating your site dark]][Creating your site dark]
+![Creating your site]
+![Creating your site dark]
 
   [live preview]: http://localhost:8000
   [Creating your site]: assets/screenshots/creating-your-site.png#gh-light-mode-only

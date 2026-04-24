@@ -188,8 +188,8 @@ The following properties are available:
 
 When a user first visits your site, a cookie consent form is rendered:
 
-[![Cookie consent enabled]][Cookie consent enabled]
-[![Cookie consent enabled dark]][Cookie consent enabled dark]
+![Cookie consent enabled]
+![Cookie consent enabled dark]
 
   [Custom cookies]: #custom-cookies
   [Cookie consent enabled]: ../assets/screenshots/consent.png#gh-light-mode-only
