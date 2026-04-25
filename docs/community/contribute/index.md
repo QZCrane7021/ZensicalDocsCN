@@ -214,6 +214,28 @@ _We reserve the right to mark these issues as incomplete and close them._ This
 practice ensures that we are addressing genuine concerns with precision and
 clarity, rather than automated outputs.
 
+### LLM-generated issues
+
+We are seeing an increasing number of bug reports, change requests and pull
+requests generated with large language models (LLMs) that are not a carefully
+reviewed or edited before submitting.
+
+LLM-generated reports are often verbose, unfocused, and rarely adhere to our
+contribution guidelines and the templates we created, which exist to make sure
+we get exactly the information we need to address issues quickly and
+efficiently. Instead, they create unnecessary noise for maintainers. If needed,
+we can produce a report using LLMs ourselves.
+
+We ask you kindly to refrain from submitting LLM-generated issues or pull
+requests to our issue tracker. We reserve the right to immediately close your
+issue or pull request if it falls into this category. We also reserve the right
+to block your account from our repositories if you continue to ignore our
+contribution guidelines.
+
+If you use AI tools to help draft an issue, critically review and verify the
+output yourself before submitting – keep it concise, on point, and in line with
+our contribution guidelines.
+
   [minimal reproductions]: ../guides/create-a-reproduction.md
   [minimal reproduction]: ../guides/create-a-reproduction.md
   [bug reports]: report-a-bug.md
