@@ -145,7 +145,7 @@ usage:
 
 - [Using definition lists]
 
-  [Using definition lists]: https://python-markdown.github.io/extensions/definition_lists/
+  [Definition Lists]: https://python-markdown.github.io/extensions/definition_lists/
   [description lists]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
   [Using definition lists]: ../../authoring/lists.md#use-definition-lists
 
