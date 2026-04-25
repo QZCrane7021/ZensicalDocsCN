@@ -95,7 +95,7 @@ any icon bundled with the theme by referencing a valid icon path in
 You can use icons from any of the [available icon sets] or use one of these
 popular choices:
 
-  [available icon set]: ../authoring/icons-emojis.md#included-icon-sets
+  [available icon sets]: ../authoring/icons-emojis.md#included-icon-sets
 
 - :fontawesome-brands-git: – `fontawesome/brands/git`
 - :fontawesome-brands-git-alt: – `fontawesome/brands/git-alt`
