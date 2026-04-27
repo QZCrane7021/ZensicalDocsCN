@@ -28,7 +28,7 @@ design or apply specific branding, simply place your style sheet file within the
 
 === "`zensical.toml`"
 
-    ``` .sh
+    ```
     .
     ├─ docs/
     │  └─ stylesheets/
@@ -45,7 +45,7 @@ design or apply specific branding, simply place your style sheet file within the
 
 === "`mkdocs.yml`"
 
-    ``` { .sh .no-copy }
+    ```
     .
     ├─ docs/
     │  └─ stylesheets/
@@ -68,7 +68,7 @@ the `docs` directory:
 
 === "`zensical.toml`"
 
-    ``` .sh
+    ```
     .
     ├─ docs/
     │  └─ javascripts/
@@ -85,7 +85,7 @@ the `docs` directory:
 
 === "`mkdocs.yml`"
 
-    ``` .sh
+    ```
     .
     ├─ docs/
     │  └─ javascripts/
@@ -128,6 +128,7 @@ to be loaded as a module:
 [JavaScript module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 === "`zensical.toml`"
+
     ``` toml
     [[project.extra_javascript]]
     path = "javascripts/extra.js"
@@ -135,6 +136,7 @@ to be loaded as a module:
     ```
 
 === "`mkdocs.yml`"
+
     ``` yaml
     extra_javascript:
       - path: javascripts/extra.js
@@ -149,6 +151,7 @@ script tag to further influence how the JavaScript is loaded. For example, for
 the `async` case:
 
 === "`zensical.toml`"
+
     ``` toml
     [[project.extra_javascript]]
     path = "javascripts/extra.js"
@@ -156,6 +159,7 @@ the `async` case:
     ```
 
 === "`mkdocs.yml`"
+
     ``` yaml
     extra_javascript:
       - path: javascripts/extra.js
@@ -322,7 +326,7 @@ making changes via overrides is therefore to override `main.html` instead of
 In order to set up block overrides, create a `main.html` file inside the
 `overrides` directory:
 
-``` { .sh .no-copy }
+```
 .
 └─ overrides/
    └─ main.html
@@ -384,7 +388,7 @@ and location in the `overrides` directory. For example, to replace the original
 `footer.html` partial, create a new `footer.html` partial in the `overrides`
 directory:
 
-``` .sh
+```
 .
 └─ overrides/
    └─ partials/
@@ -392,3 +396,145 @@ directory:
 ```
 
 Zensical will now use the new partial when rendering the theme.
+
+## Packaging themes
+
+If you want to share your theme extension with others, you can package it as a
+Python distribution. This allows users to install it with `pip` and reference it
+by name in their configuration.
+
+!!! info "Future improvements"
+
+    The current packaging process closely mirrors MkDocs, using the
+    `mkdocs.themes` entry point, which allows existing Material for MkDocs
+    theme derivations to run on Zensical with minimal changes. With the
+    upcoming [component system], this process will become more flexible,
+    enabling reuse at the component level.
+
+[component system]: https://zensical.org/about/roadmap/#component-system
+
+### Package layout
+
+The following layout is recommended for a packaged theme extension. The package
+directory contains an optional `mkdocs_theme.yml` configuration file alongside
+your template and media files, and a `pyproject.toml` at the top level declares
+the package metadata and entry point:
+
+``` sh
+.
+├─ pyproject.toml
+└─ my_theme/
+   ├─ __init__.py #(1)!
+   ├─ ... #(2)!
+   ├─ main.html
+   └─ mkdocs_theme.yml
+```
+
+1.  The `__init__.py` file is required to make the theme directory a Python
+    package that can be imported. __It can be empty__.
+
+2.  You can add any files you like here. As a recommendation for a sensible
+    structure, you can follow the patterns laid out in the [theme structure]
+    section.
+
+[theme structure]: #theme-structure
+
+### Package configuration
+
+The `pyproject.toml` file should contain the following content, with the
+placeholders – marked as highlighted lines – replaced with your actual values:
+
+```toml hl_lines="6 8 10 17 20"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-theme"
+version = "0.1.0"
+description = "My theme extension"
+authors = [
+  { name = "Jane Doe", email = "jane@example.com" }
+]
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["zensical>=0.0.37"]
+
+[tool.hatch.build.targets.wheel]
+include = ["my_theme"]
+
+[project.entry-points."mkdocs.themes"]
+my_theme = "my_theme"
+```
+
+The entry point group `mkdocs.themes` is what Zensical uses to discover
+installed themes. The key on the left (`my_theme`) is the name users will
+set in their configuration file, and the value on the right (`my_theme`) is
+the directory inside your package that contains the theme files.
+
+### Theme configuration
+
+A packaged theme extension may include a `mkdocs_theme.yml` file in the theme
+directory to set default configuration values and declare which theme it extends:
+
+```yaml
+extends: material #(1)!
+
+# Default configuration - here, we just set a different font to demonstrate the
+# concept, but you can set any theme configuration option here
+font:
+  text: Roboto
+  code: Roboto
+```
+
+1.  If you're building on top of Zensical's default theme, set `extends` to
+    `material`. If you're building on top of another extension, set it to the
+    name of that extension.
+
+    For now, we deliberately keep the name of the default theme as `material`
+    for compatibility with existing Material for MkDocs extensions.
+
+The `extends` key tells Zensical which theme this extension builds on. Users
+can override any of the defaults defined here in their own `mkdocs.yml` or
+`zensical.toml`. If no `mkdocs_theme.yml` is provided, the extension is treated
+as a full standalone theme.
+
+
+!!! note "Differences from MkDocs theme packaging"
+
+    Zensical makes theming more flexible than MkDocs:
+
+    - **`mkdocs_theme.yml` is optional, even for packaged themes.** MkDocs requires it for any packaged theme; Zensical simply looks for it and uses it when present.
+    - **`mkdocs_theme.yml` is also read from `custom_dir`.** MkDocs ignores it outside of packaged themes; Zensical reads it regardless, so you can include theme configuration in a local override directory too.
+    - **Inheritance is driven by `extends` in `mkdocs_theme.yml`, not by `name` in the user's config.** Your extension always declares what it extends, independent of how the user has configured their project.
+
+### Using packaged themes
+
+Once your package is ready, install it locally with:
+
+```
+pip install .
+```
+
+Or publish it to PyPI and let users install it with:
+
+```
+pip install my-theme
+```
+
+Users can then reference your extension by its entry point name in their
+configuration:
+
+=== "`zensical.toml`"
+
+    ```toml
+    [project.theme]
+    name = "my_theme"
+    ```
+
+=== "`mkdocs.yml`"
+
+    ``` yaml
+    theme:
+      name: my_theme
+    ```
