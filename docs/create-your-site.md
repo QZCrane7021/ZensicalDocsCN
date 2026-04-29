@@ -66,7 +66,6 @@ prerequisite for the following features:
 [Custom error pages]: customization.md#custom-error-pages
 [Instant navigation]: setup/navigation.md#instant-navigation
 [Instant previews]: setup/navigation.md#instant-previews
-[setup]: setup/index.md
 
 ## Preview as you write
 

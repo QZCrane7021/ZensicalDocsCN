@@ -39,9 +39,6 @@ The following languages are supported:
 --8<-- "includes/languages.html"
 
   [single language per document]: https://www.w3.org/International/questions/qa-html-language-declarations.en#attributes
-  [language selector]: #site-language-selector
-  [Unicode-aware slug function]: extensions/python-markdown.md#tocslugify
-  [add a new language]: https://github.com/zensical/zensical/issues/new?template=04-add-a-translation.yml&title=Add+translations+for+...
 
 ### Site language selector
 

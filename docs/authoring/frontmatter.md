@@ -24,10 +24,6 @@ title: Lorem ipsum dolor sit amet
 ...
 ```
 
-[page icon]: #page-icon
-[page status]: #page-status
-[head]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
-
 ## Page description
 
 A Markdown file can include a description that is added to the HTML head `meta`
@@ -41,9 +37,6 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
 # Page title
 ...
 ```
-
-[social cards]: https://zensical.org/about/roadmap/#feature-parity
-[site_description]: ../setup/basics.md#site_description
 
 ## Page icon
 

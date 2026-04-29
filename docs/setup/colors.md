@@ -356,8 +356,6 @@ Zensical will now change the color palette each time the operating
 system switches between light and dark appearance, even when the user doesn't
 reload the site.
 
-  [Insiders]: ../insiders/index.md
-
 ## Customization
 
 ### Custom colors
@@ -418,7 +416,6 @@ your configuration:
     ```
 
   [CSS variables]: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
-  [color definitions]: https://github.com/zensical/zensical/blob/master/src/templates/assets/stylesheets/main/_colors.scss
 
 ### Custom color schemes
 

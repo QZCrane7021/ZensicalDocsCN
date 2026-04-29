@@ -126,7 +126,6 @@ setting:
         ```
 
   [custom icon]: logo-and-icons.md#additional-icons
-  [icon search]: ../authoring/icons-emojis.md#search
 
 ## Usage
 

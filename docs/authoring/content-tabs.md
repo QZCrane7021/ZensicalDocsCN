@@ -89,7 +89,6 @@ function with the following lines:
   [first]: #anchor-links-open-me-in-a-new-tab-
   [second]: #anchor-links--or-me-
   [third]: #anchor-links--or-even-me
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
   [slugification]: ../setup/extensions/python-markdown-extensions.md#slugify
 
 ### Linked content tabs

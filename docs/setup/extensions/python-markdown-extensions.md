@@ -494,12 +494,9 @@ See these authoring guides for usage:
 - [Custom syntax theme]
 
   [Highlight]: https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
-  [CodeHilite]: python-markdown.md#codehilite
   [pymdownx.superfences]: #superfences
   [pymdownx.inlinehilite]: #inlinehilite
   [Pygments]: https://pygments.org
-  [additional style sheet]: ../../customization.md#additional-css
-  [Highlight.js]: https://highlightjs.org/
   [title]: ../../authoring/code-blocks.md#add-a-title
   [Adding line numbers]: ../../authoring/code-blocks.md#add-line-numbers
   [Using code blocks]: ../../authoring/code-blocks.md#usage
@@ -693,7 +690,6 @@ See these authoring guides for usage:
 - [Using entity-relationship diagrams]
 
   [SuperFences]: https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
-  [Fenced Code Blocks]: python-markdown.md#fenced-code-blocks
   [Mermaid.js]: https://mermaid-js.github.io/mermaid/
   [diagrams]: ../../authoring/diagrams.md
   [Using content tabs]: ../../authoring/content-tabs.md#usage
@@ -818,7 +814,6 @@ See these authoring guides for usage:
 
   [Tabbed]: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
   [alternate style]: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#alternate-style
-  [combine_header_slug style]: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#tab-ids
   [better behavior on mobile viewports]: https://x.com/squidfunk/status/1424740370596958214
   [Grouping code blocks]: ../../authoring/content-tabs.md#group-code-blocks
   [Grouping other content]: ../../authoring/content-tabs.md#group-other-content

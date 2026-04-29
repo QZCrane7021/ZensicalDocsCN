@@ -59,8 +59,6 @@ Add the following lines to your configuration:
         - search.highlight
     ```
 
-  [Search highlighting example]: ../authoring/code-blocks.md?h=code+blocks
-
 ## Usage
 
 ### Search exclusion

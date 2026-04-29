@@ -55,5 +55,3 @@ check the distribution of browser types and versions among your users.
   [open an issue]: https://github.com/zensical/zensical/issues/new/choose
   [caniuse.com]: https://caniuse.com/
   [:is pseudo selector]: https://caniuse.com/css-matches-pseudo
-  [browser support]: #supported-browsers
-

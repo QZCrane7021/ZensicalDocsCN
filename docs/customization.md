@@ -117,7 +117,6 @@ the `docs` directory:
     ```
 
   [instant navigation]: setup/navigation.md#instant-navigation
-  [RxJS Observable]: https://rxjs.dev/api/index/class/Observable
 
 #### Modules, `async`, `defer`
 

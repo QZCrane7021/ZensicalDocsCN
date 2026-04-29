@@ -63,8 +63,6 @@ __Footnote tooltips are enabled on our documentation__, so to try it out, you
 can just hover or focus any footnote on this page or any other page of our
 documentation.
 
-  [Insiders]: ../insiders/index.md
-
 ## Usage
 
 ### Adding footnote references

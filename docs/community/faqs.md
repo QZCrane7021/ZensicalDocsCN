@@ -223,8 +223,6 @@ sites of unlimited complexity, with unlimited teams, and unlimited numbers of
 users. There is no Insiders program like Material for MkDocs had that ties the
 release of features to funding goals, nor is there an open core model.
 
-  [Zensical Spark]: https://zensical/spark
-
 ###  Does Zensical Spark mean Zensical is not Open Source?
 
 All software we publish is Open Source.[^infra] Zensical Spark is an optional
@@ -301,7 +299,6 @@ request on GitHub to trigger our process.
 
 [process for requesting changes]: https://zensical.org/docs/community/contribute/request-a-change/
 [backlog]: https://github.com/orgs/zensical/projects/2/views/1
-[support-mdm]: https://squidfunk.github.io/mkdocs-material/blog/2025/11/05/zensical/#looking-ahead
 
 ## Other questions
 

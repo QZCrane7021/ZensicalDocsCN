@@ -69,8 +69,6 @@ _repository name_ automatically. If you wish to customize the name, set
     repo_name: zensical/zensical
     ```
 
-  [repo_name]: https://www.mkdocs.org/user-guide/configuration/#repo_name
-
 ### Repository icon
 
 While the default repository icon is a generic git icon, it can be set to
@@ -186,4 +184,3 @@ The icon of the edit and view buttons can be changed with the following lines:
   [repo_url]: #repository
   [GitHub]: https://github.com/
   [GitLab]: https://about.gitlab.com/
-  [Bitbucket]: https://bitbucket.org/

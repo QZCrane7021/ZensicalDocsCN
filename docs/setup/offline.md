@@ -37,7 +37,6 @@ the following lines to your configuration:
     `plugins` is a carry-over from Material for MkDocs and will be automatically
     replaced in a future version.
 
-  [limitations]: #limitations
   [site search]: search.md
   [site directory]: basics.md#site_dir
 

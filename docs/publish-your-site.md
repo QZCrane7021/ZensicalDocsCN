@@ -114,7 +114,6 @@ Your documentation is will now be published under `<username>.gitlab.io/<reposit
 
   [GitLab Pages]: https://gitlab.com/pages
   [GitLab CI]: https://docs.gitlab.com/ee/ci/
-  [site_dir]: setup/basics.md#site_dir
   [default branch]: https://docs.gitlab.com/ee/user/project/repository/branches/default.html
 
 ## Other

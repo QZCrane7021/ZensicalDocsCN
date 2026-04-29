@@ -148,7 +148,6 @@ lines to your configuration:
             ```
 
   [custom icon]: ../setup/logo-and-icons.md#additional-icons
-  [supported types]: #supported-types
 
 ## Usage
 

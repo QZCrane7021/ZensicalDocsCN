@@ -71,7 +71,6 @@ __You can ask for help on our [Discord channel] if you run into problems.__
   [extra_css]: ../../customization.md#additional-css
   [extra_javascript]: ../../customization.md#additional-javascript
   [Discord channel]: https://discord.gg/hqXRNq9CjT
-  [StackOverflow]: https://stackoverflow.com
 
 ### Search for solutions
 
@@ -189,10 +188,6 @@ we maintainers can fix the bug in our code base.
 > __Why we need this__: In order for us to understand the problem, we
 > need a clear description of it and quantify its impact, which is essential
 > for triage and prioritization.
-
-  [Python Markdown]: https://python-markdown.github.io/extensions/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [theme.name]: https://www.mkdocs.org/user-guide/configuration/#theme
 
 ### Related links
 

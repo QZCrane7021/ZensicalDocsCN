@@ -36,7 +36,6 @@ necessary dependencies alongside Zensical.
   [with-uv]: #install-with-uv
   [Python Setup and Usage]: https://docs.python.org/3/using
   [Python website]: https://www.python.org/
-  [virtual environment]: https://realpython.com/what-is-pip
 
 !!! tip "Use with Docker"
     If you are familiar with Docker and wish to use Zensical in a container then
@@ -89,12 +88,6 @@ Zensical can be installed into a virtual environment[^venv] with `pip`.
     source .venv/bin/activate
     pip install zensical
     ```
-
-  [upgrade to the next major version]: upgrade.md
-  [Python Markdown]: https://python-markdown.github.io/
-  [Pygments]: https://pygments.org/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [Using Python's pip to Manage Your Projects' Dependencies]: https://realpython.com/what-is-pip/
 
 ### Install with uv { data-toc-label="with uv" }
 

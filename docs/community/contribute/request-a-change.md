@@ -143,9 +143,6 @@ here before we maintainers can add it to the codebase.
 > description, you can save us all time spent discussing further clarification
 > of your idea in the comments.
 
-  [Python Markdown]: https://python-markdown.github.io/extensions/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-
 ### Related links
 
 Please provide any relevant links to issues or documentation sections related to
