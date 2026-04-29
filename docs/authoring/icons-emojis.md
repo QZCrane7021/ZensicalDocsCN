@@ -149,7 +149,6 @@ After applying the customization, add the CSS class to the icon shortcode:
 
 </div>
 
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
   [additional style sheet]: ../customization.md#additional-css
 
 #### with animations

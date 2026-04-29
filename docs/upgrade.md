@@ -57,5 +57,3 @@ Zensical follows [semantic versioning] and currently uses **0.0.x versioning**
 (alpha / development releases). We're approaching a **beta release**, after
 which we'll transition to **0.x** versioning. Once we reach a stable 1.0 release,
 the standard semantic versioning rules will apply more strictly.
-
-[semantic versioning]: https://semver.org/

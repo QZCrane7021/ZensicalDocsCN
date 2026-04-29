@@ -10,7 +10,7 @@ tags:
 As with any other service offered on the web, understanding how your project
 documentation is actually used can be an essential success factor. Zensical
 natively integrates with [Google Analytics] and offers a customizable [cookie
-consent] and a [feedback widget].
+consent] and a [feedback widget][widget].
 
 !!! info "We're overhauling our analytics integration"
 
@@ -20,7 +20,7 @@ consent] and a [feedback widget].
 
   [Google Analytics]: https://developers.google.com/analytics
   [cookie consent]: data-privacy.md#cookie-consent
-  [feedback widget]: #was-this-page-helpful
+  [widget]: #was-this-page-helpful
   [newsletter]: https://zensical.org/about/newsletter/
 
 ## Configuration
@@ -225,8 +225,8 @@ The following properties are available for each rating:
 
 ### Hide the feedback widget
 
-The [feedback widget] can be hidden for a document with the front matter `hide`
-property. Add the following lines at the top of a Markdown file:
+The [feedback widget][widget] can be hidden for a document with the front matter
+`hide` property. Add the following lines at the top of a Markdown file:
 
 ``` yaml
 ---

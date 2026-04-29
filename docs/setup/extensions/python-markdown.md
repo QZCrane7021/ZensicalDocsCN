@@ -209,7 +209,6 @@ can be used:
 - [Image captions]
 
   [Markdown in HTML]: https://python-markdown.github.io/extensions/md_in_html/
-  [Using grids]: ../../authoring/grids.md#usage
   [Image captions]: ../../authoring/images.md#image-captions
 
 ### Table of Contents

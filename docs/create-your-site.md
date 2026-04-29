@@ -105,5 +105,3 @@ web space.
 If you intend to distribute your documentation as a set of files to be
 read from a local filesystem rather than a web server (such as in a
 `.zip` file), please consult the [offline usage] guide.
-
-  [offline usage]: setup/offline.md
