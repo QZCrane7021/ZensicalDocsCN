@@ -13,7 +13,7 @@ To build your documentation site, run `zensical build`.
 ## Usage
 
 ```sh
-zensical build [OPTIONS] 
+zensical build [OPTIONS]
 ```
 
 This will generate the static site in the configured [`site_dir`][site_dir],
@@ -28,4 +28,7 @@ command. It supports the following options:
 | ------------- | ----- | ------------------------------- |
 | --config-file | -f    | Path to the config file to use. |
 | --clean       | -c    | Clean cache.                    |
+| --strict      | -s    | Enable [strict mode].           |
 | --help        |       | Show a help message and exit.   |
+
+[strict mode]: ../setup/validation.md#strict-mode

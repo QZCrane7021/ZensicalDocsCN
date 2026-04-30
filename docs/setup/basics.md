@@ -326,7 +326,5 @@ we're rethinking how configuration and customization should work:
 - `exclude_docs`
 - `draft_docs`
 - `not_in_nav`
-- `validation`
-- `strict`
 - `hooks`
 - `watch`
