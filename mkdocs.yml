@@ -171,70 +171,70 @@ markdown_extensions:
 nav:
   - Home: https://zensical.org
   - Get started:
-    - Get started: get-started.md
-    - Create your site: create-your-site.md
-    - Publish your site: publish-your-site.md
-    - Customization: customization.md
-    - How to upgrade: upgrade.md
-    - Browser support: browser-support.md
-    - License: license.md
+      - Get started: get-started.md
+      - Create your site: create-your-site.md
+      - Publish your site: publish-your-site.md
+      - Customization: customization.md
+      - How to upgrade: upgrade.md
+      - Browser support: browser-support.md
+      - License: license.md
   - Usage:
-    - Command line: usage/cli.md
-    - New project: usage/new.md
-    - Preview: usage/preview.md
-    - Build: usage/build.md
+      - Command line: usage/cli.md
+      - New project: usage/new.md
+      - Preview: usage/preview.md
+      - Build: usage/build.md
   - Setup:
-    - Basics: setup/basics.md
-    - Colors: setup/colors.md
-    - Fonts: setup/fonts.md
-    - Language: setup/language.md
-    - Logo and icons: setup/logo-and-icons.md
-    - Data privacy: setup/data-privacy.md
-    - Navigation: setup/navigation.md
-    - Site search: setup/search.md
-    - Site analytics: setup/analytics.md
-    - Social cards: setup/social-cards.md
-    - Tags: setup/tags.md
-    - Header: setup/header.md
-    - Footer: setup/footer.md
-    - Repository: setup/repository.md
-    - Versioning: setup/versioning.md
-    - Comment system: setup/comment-system.md
-    - Offline usage: setup/offline.md
-    - Extensions:
-      - setup/extensions/index.md
-      - Markdown: setup/extensions/python-markdown.md
-      - Markdown Extensions: setup/extensions/python-markdown-extensions.md
-      - mkdocstrings: setup/extensions/mkdocstrings.md
+      - Basics: setup/basics.md
+      - Colors: setup/colors.md
+      - Fonts: setup/fonts.md
+      - Language: setup/language.md
+      - Logo and icons: setup/logo-and-icons.md
+      - Data privacy: setup/data-privacy.md
+      - Navigation: setup/navigation.md
+      - Validation: setup/validation.md
+      - Site search: setup/search.md
+      - Site analytics: setup/analytics.md
+      - Social cards: setup/social-cards.md
+      - Tags: setup/tags.md
+      - Header: setup/header.md
+      - Footer: setup/footer.md
+      - Repository: setup/repository.md
+      - Versioning: setup/versioning.md
+      - Comment system: setup/comment-system.md
+      - Offline usage: setup/offline.md
+      - Extensions:
+          - setup/extensions/index.md
+          - Markdown: setup/extensions/python-markdown.md
+          - Markdown Extensions: setup/extensions/python-markdown-extensions.md
+          - mkdocstrings: setup/extensions/mkdocstrings.md
   - Authoring:
-    - Markdown: authoring/markdown.md
-    - Front matter: authoring/frontmatter.md
-    - Admonitions: authoring/admonitions.md
-    - Buttons: authoring/buttons.md
-    - Code blocks: authoring/code-blocks.md
-    - Content tabs: authoring/content-tabs.md
-    - Data tables: authoring/data-tables.md
-    - Diagrams: authoring/diagrams.md
-    - Footnotes: authoring/footnotes.md
-    - Formatting: authoring/formatting.md
-    - Grids: authoring/grids.md
-    - Icons, Emojis: authoring/icons-emojis.md
-    - Images: authoring/images.md
-    - Lists: authoring/lists.md
-    - Math: authoring/math.md
-    - Tooltips: authoring/tooltips.md
+      - Markdown: authoring/markdown.md
+      - Front matter: authoring/frontmatter.md
+      - Admonitions: authoring/admonitions.md
+      - Buttons: authoring/buttons.md
+      - Code blocks: authoring/code-blocks.md
+      - Content tabs: authoring/content-tabs.md
+      - Data tables: authoring/data-tables.md
+      - Diagrams: authoring/diagrams.md
+      - Footnotes: authoring/footnotes.md
+      - Formatting: authoring/formatting.md
+      - Grids: authoring/grids.md
+      - Icons, Emojis: authoring/icons-emojis.md
+      - Images: authoring/images.md
+      - Lists: authoring/lists.md
+      - Math: authoring/math.md
+      - Tooltips: authoring/tooltips.md
   - Community:
-    - Get involved: community/get-involved.md
-    - How we work: community/how-we-work.md
-    - FAQs: community/faqs.md
-    - Contribute:
-      - community/contribute/index.md
-      - Bug reports: community/contribute/report-a-bug.md
-      - Documentation: community/contribute/report-a-docs-issue.md
-      - Change requests: community/contribute/request-a-change.md
-      - Pull requests: community/contribute/pull-requests.md
-      - Code of conduct: community/contribute/code-of-conduct.md
-    - Guides:
-      - Reproductions: community/guides/create-a-reproduction.md
-      - Development: community/guides/develop.md
-
+      - Get involved: community/get-involved.md
+      - How we work: community/how-we-work.md
+      - FAQs: community/faqs.md
+      - Contribute:
+          - community/contribute/index.md
+          - Bug reports: community/contribute/report-a-bug.md
+          - Documentation: community/contribute/report-a-docs-issue.md
+          - Change requests: community/contribute/request-a-change.md
+          - Pull requests: community/contribute/pull-requests.md
+          - Code of conduct: community/contribute/code-of-conduct.md
+      - Guides:
+          - Reproductions: community/guides/create-a-reproduction.md
+          - Development: community/guides/develop.md
