@@ -125,12 +125,6 @@ the reasons mentioned above. Instead of supporting absolute links, we are
 considering other solutions that solve most if not all of the problems discussed
 above.
 
-### Will there be (link) validation and a `--strict` mode?
-
-The `--strict mode` option is currently ignored, as are options for configuring
-link validation. We're working on adding validation of configuration options and
-of links.
-
 ### How long will you support Material for MkDocs?
 
 We are committed to [supporting Material for MkDocs][support-mkm] for at least
@@ -423,4 +417,3 @@ diagramming tools much easier.
 
   [Mermaid]: https://www.mermaidchart.com
   [Kroki]: https://kroki.io/
-

@@ -10,6 +10,10 @@ status: new
 
 Broken links are easy to miss – pages get renamed or moved, and references silently stop working. Zensical validates all internal links at build time by scanning every Markdown file and resolving all references: inline links, reference-style links, footnotes, link definitions, and anchors.
 
+Additionally, the build can be aborted when issues are found by enabling [strict mode].
+
+[strict mode]: #strict-mode
+
 ## Configuration
 
 Validation is enabled by default. All checks can be individually toggled:
@@ -401,7 +405,6 @@ Warning: anchor does not exist
    │                         ──────┬─────
    │                               ╰─────── anchor does not exist
 ───╯
-
 ```
 </div>
 
@@ -422,3 +425,31 @@ This is not a \[link](https://example.com).
 While escaping is technically not necessary when no link definition is present, it is recommended to avoid accidentally creating a link when a definition is later added.
 
 Moreover, link validation assumes that bracketed phrases are intended to be links or footnotes, so it will emit warnings for any unresolved references or unused definitions. Escaping allows you to avoid these warnings and clearly indicate that the brackets are not meant to create a link.
+
+### Strict mode
+
+If you want to enforce link validation and fail the build when issues are found, you can enable strict mode by using the `--strict` command-line option:
+
+``` markdown title="index.md"
+This is an [unresolved reference][id].
+```
+
+<div class="result" markdown>
+
+``` console
+$ zensical build --strict
+...
+Warning: unresolved link reference
+   ╭─[ index.md:1:35 ]
+   │
+ 1 │ This is an [unresolved reference][id].
+   │                                   ─┬
+   │                                    ╰── unresolved link reference
+───╯
+1 issue found
+Aborted because --strict flag is set
+```
+
+</div>
+
+The build is aborted after reporting all issues, and the exit code is set to `1` to indicate failure. This can be useful in CI/CD pipelines to ensure that all links are valid before deploying the site.
