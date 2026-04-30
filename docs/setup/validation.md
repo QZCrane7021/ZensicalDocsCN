@@ -404,3 +404,21 @@ Warning: anchor does not exist
 
 ```
 </div>
+
+## Usage
+
+Just you write your content as usual, and Zensical will automatically validate all links and footnotes at build time.
+
+If issues are found, a warning is emitted with the file name, line number, and a helpful message.
+
+### Escaping
+
+If you want to intentionally wrap a phrase with brackets without creating a link, you can escape the opening bracket with a backslash, i.e., `\[`. The closing bracket does not need to be escaped:
+
+``` markdown
+This is not a \[link](https://example.com).
+```
+
+While escaping is technically not necessary when no link definition is present, it is recommended to avoid accidentally creating a link when a definition is later added.
+
+Moreover, link validation assumes that bracketed phrases are intended to be links or footnotes, so it will emit warnings for any unresolved references or unused definitions. Escaping allows you to avoid these warnings and clearly indicate that the brackets are not meant to create a link.
