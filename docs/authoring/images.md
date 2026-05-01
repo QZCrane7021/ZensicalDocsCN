@@ -200,3 +200,11 @@ hash fragment to the image URL:
   [Zelda dark world]: ../assets/images/zelda-dark-world.png#only-dark
   [color schemes]: ../setup/colors.md#color-scheme
   [custom color schemes]: ../setup/colors.md#custom-color-schemes
+
+### Lightbox and zoom
+
+Zensical includes the [GLightbox] extension, which adds lightbox galleries. When enabled, clicking on an image opens it in a full-screen overlay with navigation and zoom controls.
+
+To enable lightbox for your images, see the [GLightbox] setup guide.
+
+  [GLightbox]: ../setup/extensions/glightbox.md
