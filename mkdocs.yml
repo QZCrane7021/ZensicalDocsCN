@@ -207,6 +207,7 @@ nav:
           - Markdown: setup/extensions/python-markdown.md
           - Markdown Extensions: setup/extensions/python-markdown-extensions.md
           - GLightbox: setup/extensions/glightbox.md
+          - Macros: setup/extensions/macros.md
           - mkdocstrings: setup/extensions/mkdocstrings.md
   - Authoring:
       - Markdown: authoring/markdown.md
