@@ -23,13 +23,13 @@ The Macros extension, included with Zensical, enables [Jinja2] templating in Mar
 
   [Jinja2]: https://jinja.palletsprojects.com
 
-!!! note "Compatibility with mkdocs-macros-plugin"
+!!! tip "Macros in Python docstrings"
 
-    Configuration from [`project.plugins.macros`][mkdocs-macros-plugin] is
-    also read, so existing projects using the [mkdocs-macros-plugin] do not
-    need to duplicate their configuration.
+    When using [mkdocstrings] to generate API documentation from Python
+    docstrings, Jinja2 expressions in docstrings are rendered natively,
+    so macros and template variables can be used directly in docstrings.
 
-  [mkdocs-macros-plugin]: https://mkdocs-macros-plugin.readthedocs.io
+  [mkdocstrings]: https://mkdocstrings.github.io
 
 The following additional configuration options are supported:
 
