@@ -12,7 +12,17 @@ Broken links are easy to miss – pages get renamed or moved, and references sil
 
 Additionally, the build can be aborted when issues are found by enabling [strict mode].
 
+??? warning "Temporary limitations"
+
+    Validation is provided on a best-effort basis. Since Python Markdown does not provide an AST, link detection relies on the same regex-based approach that Python Markdown uses internally. This is a temporary limitation – our planned migration to CommonMark will provide a proper AST, making this trivial to resolve.
+
+    __Please keep in mind__:
+
+    - Autorefs are currently reported as [unresolved references]. We're working on a solution.
+    - Don't use nested brackets in link text, e.g. `[some[nested]](href)` or `[some[nested]][id]`.
+
 [strict mode]: #strict-mode
+[unresolved references]: #unresolved_references
 
 ## Configuration
 
