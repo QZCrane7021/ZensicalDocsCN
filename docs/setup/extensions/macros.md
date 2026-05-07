@@ -409,3 +409,10 @@ include_yaml:
   - data/extra.yml
 ---
 ```
+
+## Watching external files
+
+When macros or filters read from external files — such as CSV data files or Markdown fragments — modifications to those files will not trigger a rebuild during [preview] unless the paths are registered via the [`watch`][watch] configuration option.
+
+  [preview]: ../../usage/preview.md
+  [watch]: ../basics.md#watch

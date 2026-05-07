@@ -316,6 +316,49 @@ address and a port.
 
 The default `dev_addr` is `localhost:8000`.
 
+### `watch`
+
+Additional file or directory paths to be monitored for changes during
+[preview]. Each entry is a string resolved relative to the directory containing
+the configuration file. When a watched path is modified, a **full rebuild** is
+triggered.
+
+The following paths are already watched automatically, without explicit
+configuration:
+
+- All files within [`docs_dir`](#docs_dir)
+- Theme files (installed themes and custom themes)
+- Files from the `base_path` and `auto_append` options of the [Snippets]
+  extension (`pymdownx.snippets`)
+- Files from the [`module`][macros-module], [`modules`][macros-modules],
+  [`include_yaml`][macros-include_yaml], [`include_dir`][macros-include_dir]
+  options of the [Macros] extension (`zensical.extensions.macros`)
+- Files from the `paths` option of the [mkdocstrings] compatibility extension
+
+=== "`zensical.toml`"
+
+    ``` toml
+    [project]
+    watch = ["data.csv", "fragments"]
+    ```
+
+=== "`mkdocs.yml`"
+
+    ``` yaml
+    watch:
+      - data.csv
+      - fragments
+    ```
+
+  [preview]: ../usage/preview.md
+  [Snippets]: extensions/python-markdown-extensions.md#snippets
+  [Macros]: extensions/macros.md
+  [macros-module]: extensions/macros.md#module
+  [macros-modules]: extensions/macros.md#modules
+  [macros-include_yaml]: extensions/macros.md#include_yaml
+  [macros-include_dir]: extensions/macros.md#include_dir
+  [mkdocstrings]: extensions/mkdocstrings.md
+
 ## Unsupported settings
 
 The following `mkdocs.yml` settings are not (yet) supported in Zensical, as
@@ -327,4 +370,3 @@ we're rethinking how configuration and customization should work:
 - `draft_docs`
 - `not_in_nav`
 - `hooks`
-- `watch`
