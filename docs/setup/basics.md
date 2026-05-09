@@ -353,7 +353,7 @@ configuration:
   [preview]: ../usage/preview.md
   [Snippets]: extensions/python-markdown-extensions.md#snippets
   [Macros]: extensions/macros.md
-  [macros-module]: extensions/macros.md#module
+  [macros-module]: extensions/macros.md#module_name
   [macros-modules]: extensions/macros.md#modules
   [macros-include_yaml]: extensions/macros.md#include_yaml
   [macros-include_dir]: extensions/macros.md#include_dir

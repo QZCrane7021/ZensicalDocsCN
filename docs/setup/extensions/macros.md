@@ -25,9 +25,7 @@ The Macros extension, included with Zensical, enables [Jinja2] templating in Mar
 
 !!! tip "Macros in Python docstrings"
 
-    When using [mkdocstrings] to generate API documentation from Python
-    docstrings, Jinja2 expressions in docstrings are rendered natively,
-    so macros and template variables can be used directly in docstrings.
+    When using [mkdocstrings] to generate API documentation from Python docstrings, Jinja2 expressions in docstrings are rendered natively, so macros and template variables can be used directly in docstrings.
 
   [mkdocstrings]: https://mkdocstrings.github.io
 
@@ -365,6 +363,8 @@ The following variables are available in all templates without any additional co
 | `plugin` | Current extension configuration |
 | `context()` | Macro for displaying the full template context |
 | `macros_info()` | Macro for displaying environment info, useful for debugging |
+| `pd_read_*` | Read a file and return a pandas DataFrame — see [Reading tabular data] |
+| `read_*` | Read a file and return it as a Markdown table — see [Reading tabular data] |
 
 The `git` variable exposes the following fields when a Git repository is detected:
 
@@ -382,6 +382,69 @@ The `git` variable exposes the following fields when a Git repository is detecte
 | `git.date_ISO` | Commit date in ISO 8601 format |
 | `git.message` | Commit message |
 | `git.status` | `true` if Git information was successfully retrieved |
+
+The following filters are registered and available in all templates:
+
+| Filter | Description |
+| ------ | ----------- |
+| `add_indentation` | Indents every line of a string by a given number of `spaces` or `tabs` |
+| `convert_to_md_table` | Converts a pandas DataFrame to a Markdown table string |
+| `fix_url` | Prepends `../` to relative URLs, correcting links generated in macro context |
+| `pretty` | Formats `context()` output as a Markdown table, useful for debugging |
+
+  [Reading tabular data]: #reading-tabular-data
+
+## Reading tabular data
+
+Tabular data from external files can be read and rendered directly as Markdown tables using the built-in `read_*` macros. These macros are powered by [pandas] and [tabulate], which must be installed:
+
+=== "with `pip`"
+
+    ```sh
+    pip install pandas tabulate
+    ```
+
+=== "with `uv`"
+
+    ```sh
+    uv add pandas tabulate
+    ```
+
+File paths are resolved relative to the directory containing the configuration file. A `read_*` macro is provided for each supported format. Each macro reads the file, converts it to a pandas DataFrame internally, and returns a Markdown table string ready to be embedded into content:
+
+```jinja
+{{ read_csv("data/team.csv") }}
+```
+
+Keyword arguments are split between the underlying pandas reader and the [`DataFrame.to_markdown()`][to_markdown] method:
+
+```jinja
+{{ read_csv("data/releases.csv", sep=";", index=True) }}
+```
+
+The following formats are supported:
+
+| Macro | Description | Extra dependency |
+| ----- | ----------- | ---------------- |
+| `read_csv` | Comma-separated values | — |
+| `read_fwf` | Fixed-width formatted text | — |
+| `read_yaml` | YAML | — |
+| `read_json` | JSON | — |
+| `read_table` | Generic delimited text | — |
+| `read_excel` | Excel (`.xlsx`, `.xls`) | [`openpyxl`][openpyxl] |
+| `read_feather` | Apache Feather | [`pyarrow`][pyarrow] |
+
+When the data needs to be processed before rendering, the `pd_read_*` variants return a pandas DataFrame instead of a Markdown string. A `pd_read_*` macro is available for each format listed above:
+
+```jinja
+{{ pd_read_csv("data/team.csv") | convert_to_md_table }}
+```
+
+  [pandas]: https://pandas.pydata.org
+  [tabulate]: https://pypi.org/project/tabulate/
+  [openpyxl]: https://pypi.org/project/openpyxl/
+  [pyarrow]: https://pypi.org/project/pyarrow/
+  [to_markdown]: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_markdown.html
 
 ## Per-page overrides
 
