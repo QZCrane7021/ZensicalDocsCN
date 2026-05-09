@@ -18,18 +18,19 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-name: Deploy
+name: Check
 
 on:
+  pull_request:
   push:
     branches:
       - master
   workflow_dispatch:
 
 jobs:
-  deploy:
+  check:
     runs-on: ubuntu-latest
-    name: Cloudflare
+    name: Build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -43,13 +44,4 @@ jobs:
         run: pip install zensical
 
       - name: Build documentation
-        run: zensical build --clean --strict
-
-      - name: Install Wrangler
-        run: npm install -g wrangler
-
-      - name: Deploy to Cloudflare
-        uses: cloudflare/wrangler-action@v3
-        with:
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: zensical build --strict
