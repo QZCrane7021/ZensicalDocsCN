@@ -16,7 +16,7 @@ months, making it much more flexible and powerful.
     features into Zensical.
 
   [mkdocstrings]: https://mkdocstrings.github.io
-  [0.0.11]: https://github.com/zensical/zensical/releases/tag/0.0.11
+  [0.0.11]: https://github.com/zensical/zensical/releases/tag/v0.0.11
   [API reference documentation]: https://zensical.org/about/roadmap/#api-documentation
 
 ## Installation
