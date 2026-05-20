@@ -89,6 +89,10 @@ plugins:
 
 # Additional configuration
 extra:
+  alternate:
+    - name: Simplified Chinese
+      link: /zh/
+      lang: zh
   homepage: https://zensical.org
   scope: /
   annotate:
