@@ -20,7 +20,8 @@
 
 # Project information
 site_name: Zensical Documentation
-site_url: https://zensical.org/docs/
+site_url: https://qzcrane7021.github.io/ZensicalDocsCN
+dev_addr: localhost:8000
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
@@ -29,6 +30,8 @@ site_description: >-
 repo_name: zensical/zensical
 repo_url: https://github.com/zensical/zensical
 edit_uri: https://github.com/zensical/docs/edit/master/docs/
+
+docs_dir: docs/zh
 
 # Copyright
 copyright: "&copy; 2025 - 2026 Zensical LLC"
@@ -88,14 +91,7 @@ plugins:
   - tags
 
 # Additional configuration
-extra:
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: Simplified Chinese
-      link: /zh/
-      lang: zh        
+extra:       
       
   homepage: https://zensical.org
   scope: /
@@ -178,72 +174,73 @@ markdown_extensions:
 # Page tree
 nav:
   - 开始使用:
-      - 开始使用: zh/get-started.md
-      - 创建网站: zh/create-your-site.md
-      - 发布网站: zh/publish-your-site.md
-      - 个性化: zh/customization.md
-      - 如何升级: zh/upgrade.md
-      - 浏览器支持: zh/browser-support.md
-      - 协议: zh/license.md
+      - 开始使用: get-started.md
+      - 创建网站: create-your-site.md
+      - 发布网站: publish-your-site.md
+      - 个性化: customization.md
+      - 如何升级: upgrade.md
+      - 浏览器支持: browser-support.md
+      - 协议: license.md
   - 使用:
-      - 命令行: zh/usage/cli.md
-      - 创建新项目: zh/usage/new.md
-      - 预览: zh/usage/preview.md
-      - 构建: zh/usage/build.md
+      - 命令行: usage/cli.md
+      - 创建新项目: usage/new.md
+      - 预览: usage/preview.md
+      - 构建: usage/build.md
   - 设置:
-      - 基础: zh/setup/basics.md
-      - 色彩: zh/setup/colors.md
-      - 字体: zh/setup/fonts.md
-      - 语言: zh/setup/language.md
-      - 图标: zh/setup/logo-and-icons.md
-      - 数据隐私: zh/setup/data-privacy.md
-      - 导航: zh/setup/navigation.md
-      - 完整性检验: zh/setup/validation.md
-      - 站内搜索: zh/setup/search.md
-      - 站点数据: zh/setup/analytics.md
-      - 社交链接卡: zh/setup/social-cards.md
-      - 标签: zh/setup/tags.md
-      - 页眉: zh/setup/header.md
-      - 页脚: zh/setup/footer.md
-      - 仓库: zh/setup/repository.md
-      - 分版本文档: zh/setup/versioning.md
-      - 评论: zh/setup/comment-system.md
-      - 离线浏览: zh/setup/offline.md
+      - 基础: setup/basics.md
+      - 色彩: setup/colors.md
+      - 字体: setup/fonts.md
+      - 语言: setup/language.md
+      - 图标: setup/logo-and-icons.md
+      - 数据隐私: setup/data-privacy.md
+      - 导航: setup/navigation.md
+      - 完整性检验: setup/validation.md
+      - 站内搜索: setup/search.md
+      - 站点数据: setup/analytics.md
+      - 社交链接卡: setup/social-cards.md
+      - 标签: setup/tags.md
+      - 页眉: setup/header.md
+      - 页脚: setup/footer.md
+      - 仓库: setup/repository.md
+      - 分版本文档: setup/versioning.md
+      - 评论: setup/comment-system.md
+      - 离线浏览: setup/offline.md
       - 扩展:
-          - zh/setup/extensions/index.md
-          - Markdown: zh/setup/extensions/python-markdown.md
-          - Markdown 扩展: zh/setup/extensions/python-markdown-extensions.md
-          - GLightbox: zh/setup/extensions/glightbox.md
-          - Macros: zh/setup/extensions/macros.md
-          - mkdocstrings: zh/setup/extensions/mkdocstrings.md
+          - setup/extensions/index.md
+          - Markdown: setup/extensions/python-markdown.md
+          - Markdown 扩展: setup/extensions/python-markdown-extensions.md
+          - GLightbox: setup/extensions/glightbox.md
+          - Macros: setup/extensions/macros.md
+          - mkdocstrings: setup/extensions/mkdocstrings.md
   - 撰写工具:
-      - Markdown: zh/authoring/markdown.md
-      - 前文: zh/authoring/frontmatter.md
-      - 提示: zh/authoring/admonitions.md
-      - 按钮: zh/authoring/buttons.md
-      - 代码块: zh/authoring/code-blocks.md
-      - 分标签内容块: zh/authoring/content-tabs.md
-      - 数据表: zh/authoring/data-tables.md
-      - 图标: zh/authoring/diagrams.md
-      - 角注: zh/authoring/footnotes.md
-      - 格式化: zh/authoring/formatting.md
-      - 格式框架: zh/authoring/grids.md
-      - 图标和表情: zh/authoring/icons-emojis.md
-      - 图片: zh/authoring/images.md
-      - 列表: zh/authoring/lists.md
-      - 数学公式: zh/authoring/math.md
-      - 浮现提示: zh/authoring/tooltips.md
+      - Markdown: authoring/markdown.md
+      - 前文: authoring/frontmatter.md
+      - 提示: authoring/admonitions.md
+      - 按钮: authoring/buttons.md
+      - 代码块: authoring/code-blocks.md
+      - 分标签内容块: authoring/content-tabs.md
+      - 数据表: authoring/data-tables.md
+      - 图标: authoring/diagrams.md
+      - 角注: authoring/footnotes.md
+      - 格式化: authoring/formatting.md
+      - 格式框架: authoring/grids.md
+      - 图标和表情: authoring/icons-emojis.md
+      - 图片: authoring/images.md
+      - 列表: authoring/lists.md
+      - 数学公式: authoring/math.md
+      - 浮现提示: authoring/tooltips.md
   - 社区:
-      - 参与建设: zh/community/get-involved.md
-      - 我们是如何工作的: zh/community/how-we-work.md
-      - 常见问题: zh/community/faqs.md
+      - 参与建设: community/get-involved.md
+      - 我们是如何工作的: community/how-we-work.md
+      - 常见问题: community/faqs.md
       - 作出贡献:
-          - zh/community/contribute/index.md
-          - 反馈 BUG: zh/community/contribute/report-a-bug.md
-          - 文档改进: zh/community/contribute/report-a-docs-issue.md
-          - 请求特性改动: zh/community/contribute/request-a-change.md
-          - Pull requests: zh/community/contribute/pull-requests.md
-          - 行为准则: zh/community/contribute/code-of-conduct.md
+          - community/contribute/index.md
+          - 反馈 BUG: community/contribute/report-a-bug.md
+          - 文档改进: community/contribute/report-a-docs-issue.md
+          - 请求特性改动: community/contribute/request-a-change.md
+          - Pull requests: community/contribute/pull-requests.md
+          - 行为准则: community/contribute/code-of-conduct.md
       - 指导:
-          - 复现问题: zh/community/guides/create-a-reproduction.md
-          - 开发环境: zh/community/guides/develop.md
+          - 复现问题: community/guides/create-a-reproduction.md
+          - 开发环境: community/guides/develop.md
+
