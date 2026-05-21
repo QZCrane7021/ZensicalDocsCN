@@ -173,6 +173,7 @@ markdown_extensions:
 
 # Page tree
 nav:
+  - 主页: https://zensical.org
   - 开始使用:
       - 开始使用: get-started.md
       - 创建网站: create-your-site.md
@@ -188,30 +189,32 @@ nav:
       - 构建: usage/build.md
   - 设置:
       - 基础: setup/basics.md
-      - 色彩: setup/colors.md
-      - 字体: setup/fonts.md
-      - 语言: setup/language.md
-      - 图标: setup/logo-and-icons.md
-      - 数据隐私: setup/data-privacy.md
-      - 导航: setup/navigation.md
-      - 完整性检验: setup/validation.md
-      - 站内搜索: setup/search.md
-      - 站点数据: setup/analytics.md
-      - 社交链接卡: setup/social-cards.md
-      - 标签: setup/tags.md
-      - 页眉: setup/header.md
-      - 页脚: setup/footer.md
-      - 仓库: setup/repository.md
-      - 分版本文档: setup/versioning.md
-      - 评论: setup/comment-system.md
-      - 离线浏览: setup/offline.md
-      - 扩展:
-          - setup/extensions/index.md
-          - Markdown: setup/extensions/python-markdown.md
-          - Markdown 扩展: setup/extensions/python-markdown-extensions.md
-          - GLightbox: setup/extensions/glightbox.md
-          - Macros: setup/extensions/macros.md
-          - mkdocstrings: setup/extensions/mkdocstrings.md
+      - 主题:
+          - 色彩: setup/colors.md
+          - 字体: setup/fonts.md
+          - 语言: setup/language.md
+          - 图标: setup/logo-and-icons.md
+          - 页眉: setup/header.md
+          - 页脚: setup/footer.md
+          - 仓库: setup/repository.md
+      - 站点设置:
+          - 数据隐私: setup/data-privacy.md
+          - 导航: setup/navigation.md
+          - 完整性检验: setup/validation.md
+          - 站内搜索: setup/search.md
+          - 站点数据: setup/analytics.md
+          - 社交链接卡: setup/social-cards.md
+          - 标签: setup/tags.md
+          - 分版本文档: setup/versioning.md
+          - 评论系统: setup/comment-system.md
+          - 离线浏览: setup/offline.md
+  - 扩展:
+      - 关于扩展: setup/extensions/about.md
+      - GLightbox: setup/extensions/glightbox.md
+      - Macros: setup/extensions/macros.md
+      - mkdocstrings: setup/extensions/mkdocstrings.md
+      - Python Markdown: setup/extensions/python-markdown.md
+      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
   - 撰写工具:
       - Markdown: authoring/markdown.md
       - 前文: authoring/frontmatter.md
