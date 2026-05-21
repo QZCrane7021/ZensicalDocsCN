@@ -3,4 +3,4 @@ template: redirect.html
 location: get-started/
 ---
 
-# Documentation
+# 文档 { #documentation }

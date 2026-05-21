@@ -5,28 +5,23 @@ tags:
   - Compatibility
 ---
 
-# Browser support
+# 浏览器支持 { #browser-support }
 
-Zensical tries to support the largest possible range of browsers while making it
-easy to [customize the theme] using modern CSS features like [custom properties]
-and [mask images].
+Zensical 试图适配尽可能大范围的浏览器，同时使用诸如 [自定义属性][custom properties]、[蒙版图形][mask images] 等现代 CSS 特性，让 [主题自定义][customize the theme] 更容易。
 
   [customize the theme]: customization.md
   [custom properties]: https://caniuse.com/css-variables
   [mask images]: https://caniuse.com/mdn-css_properties_mask-image
 
-## Supported browsers
+## 支持的浏览器 { #supported-browsers}
 
-The following table lists all browsers for which Zensical offers full support,
-so it can be assumed that all features work without degradation. If you find
-that something doesn't look right in a browser which is in the supported version
-range, please [open an issue]:
+以下的表格列出了 Zensical 完全支持的所有浏览器，因此可以认为这些浏览器中，Zensical 的特性将能不打折扣，全部实现。如果你使用支持版本内的浏览器，却发现有些内容有问题，请 [新建 issue][open an issue]：
 
 <figure markdown>
 
-| Browser                              | Version | Release date |         |        |      Usage |
+| 浏览器                                |     版本 |      发布日期 |         |        |      使用量 |
 | ------------------------------------ | ------: | -----------: | ------: | -----: | ---------: |
-|                                      |         |              | desktop | mobile |    overall |
+|                                      |         |              |  桌面端  |  移动端 |       整体  |
 | :fontawesome-brands-chrome: Chrome   |     49+ |      03/2016 | 25.65%  | 38.33% |     63.98% |
 | :fontawesome-brands-safari: Safari   |     10+ |      09/2016 |  4.63%  | 14.96% |     19.59% |
 | :fontawesome-brands-edge: Edge       |     79+ |      01/2020 |  3.95%  |    n/a |      3.95% |
@@ -42,15 +37,9 @@ Browser support matrix sourced from [caniuse.com].[^1]
 </figure>
 
   [^1]:
-    The data was collected from [caniuse.com] in January 2022, and is primarily
-    based on browser support for [custom properties], [mask images] and the
-    [:is pseudo selector] which are not entirely polyfillable. Browsers with a
-    cumulated market share of less than 1% were not considered, but might still
-    be fully or partially supported.
+    此数据在 2022 年 1 月由 [caniuse.com] 收集得来，主要基于浏览器对 [自定义属性][custom properties]、[蒙版图形][mask images] 和 [:is 伪类选择器][:is pseudo selector] 等特性的支持。上述特性无法完全通过补丁向后兼容。市场份额低于 1% 的浏览器不在考虑范围内，但也可能完全或部分支持上述特性。
 
-Note that the usage data is based on global browser market share, so it could
-in fact be entirely different for your target demographic. It's a good idea to
-check the distribution of browser types and versions among your users.
+要注意这份使用分布数据基于全球的浏览器市场份额，因此它实际上可能和你的目标受众完全不同。建议检查你自己的用户中浏览器类型和版本的分布情况。
 
   [open an issue]: https://github.com/zensical/zensical/issues/new/choose
   [caniuse.com]: https://caniuse.com/
