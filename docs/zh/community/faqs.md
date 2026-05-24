@@ -2,39 +2,28 @@
 icon: lucide/message-circle-question-mark
 ---
 
-# Frequently asked questions
+# 常见问题 { #frequently-asked-questions }
 
-!!! tip "Question not answered...?"
-    We would like to thank all users who have got in touch with us and shared
-    the questions they have about Zensical and about moving from Material for
-    MkDocs to Zensical. If you find that you have questions that should be
-    covered here, feel free to reach out to us at
-    [hello@zensical.org](mailto:hello@zensical.org) or post the question on
-    the [quick-thoughts] channel on Discord.
+!!! tip "碰到了这里没回答的问题……？"
+    许多用户与我们联系，和我们分享有关从 Material for MkDocs 迁移到 Zensical 以及 Zensical 本身的问题，在此感谢你们。如果你觉得有问题应该在这里回答，不用客气，给 [hello@zensical.org](mailto:hello@zensical.org) 写邮件联系，或者将问题发在 Discord 的 [一时的想法][quick-thoughts] 频道上。
 
   [quick-thoughts]: https://discord.com/channels/1289187620659789824/1435275497549598770
 
-## Troubleshooting
+## 问题排查 { #trouble-shooting }
 
-If you ever encounter any problems with Zensical, especially after upgrading to
-a new version, you may want to use the `--clean` option to clear the build cache
-before looking elsewhere.
+如果你遇到任何有关 Zensical 的问题，尤其是升级到新版本后遇到，在考虑其他可能前，应该使用 `--clean` 参数清理构建的缓存。
 
-## Compatibility and transition
+## 兼容性与迁移事宜 { #compatibility-and-transition }
 
-### When can I migrate from Material for MkDocs?
+### 我什么时候就能从 Material for MkDocs 迁移过来了呢？ { #when-can-i-migrate-from-material-for-mkdocs?}
 
-Zensical is ready to be used right now, provided your project requires only
-features that are already implemented. Our [feature parity] page provides a
-breakdown of our progress towards feature parity and we have additional pages
-covering:
+假如你的项目所需的功能已经全部实现了，Zensical 现在即可使用。我们在 [功能平衡][feature parity] 页面中详细说明了我们在这方面的进展。其他页面说明了：
 
-* [Command-line options]
-* [Template overrides] (also applies to custom templates)
-* [Third-party plugins]
+* [命令行参数选项][Command-line options]
+* [模板覆写][Template overrides] （也适用于自定义模板）
+* [第三方插件][Third-party plugins]
 
-We have not made any changes to the HTML structure, so your CSS and JavaScript
-customization will continue to work.
+我们暂未就 HTML 结构做出改动，因此你自定义的 CSS 和 JS 脚本依旧能正常生效。
 
   [command-line options]: https://zensical.org/compatibility/cli/
   [template overrides]: https://zensical.org/compatibility/overrides/

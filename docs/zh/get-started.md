@@ -1,8 +1,8 @@
 ---
 icon: lucide/package-open
 tags:
-  - Get started
-  - Setup
+  - 开始使用
+  - 设置
 ---
 
 # 开始上手 { #get-started }

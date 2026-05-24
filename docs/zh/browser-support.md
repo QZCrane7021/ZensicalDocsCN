@@ -1,8 +1,8 @@
 ---
 icon: lucide/compass
 tags:
-  - Get started
-  - Compatibility
+  - 开始使用
+  - 兼容性
 ---
 
 # 浏览器支持 { #browser-support }
@@ -15,7 +15,7 @@ Zensical 试图适配尽可能大范围的浏览器，同时使用诸如 [自定
 
 ## 支持的浏览器 { #supported-browsers}
 
-以下的表格列出了 Zensical 完全支持的所有浏览器，因此可以认为这些浏览器中，Zensical 的特性将能不打折扣，全部实现。如果你使用支持版本内的浏览器，却发现有些内容有问题，请 [新建 issue][open an issue]：
+以下的表格列出了 Zensical 完全支持的所有浏览器，因此可以认为这些浏览器中，Zensical 的特性将能无缺损完全实现。如果你使用支持版本内的浏览器，却发现有些内容有问题，请 [新建 issue][open an issue]：
 
 <figure markdown>
 
@@ -31,7 +31,7 @@ Zensical 试图适配尽可能大范围的浏览器，同时使用诸如 [自定
 
   <figcaption markdown>
 
-Browser support matrix sourced from [caniuse.com].[^1]
+浏览器支持表来自于 [caniuse.com]。[^1]
 
   </figcaption>
 </figure>
@@ -39,7 +39,7 @@ Browser support matrix sourced from [caniuse.com].[^1]
   [^1]:
     此数据在 2022 年 1 月由 [caniuse.com] 收集得来，主要基于浏览器对 [自定义属性][custom properties]、[蒙版图形][mask images] 和 [:is 伪类选择器][:is pseudo selector] 等特性的支持。上述特性无法完全通过补丁向后兼容。市场份额低于 1% 的浏览器不在考虑范围内，但也可能完全或部分支持上述特性。
 
-要注意这份使用分布数据基于全球的浏览器市场份额，因此它实际上可能和你的目标受众完全不同。建议检查你自己的用户中浏览器类型和版本的分布情况。
+要注意这份使用分布数据基于全球的浏览器市场份额，因此它实际上可能和你的目标受众完全不同。建议你自己统计用户中浏览器类型和版本的分布情况。
 
   [open an issue]: https://github.com/zensical/zensical/issues/new/choose
   [caniuse.com]: https://caniuse.com/

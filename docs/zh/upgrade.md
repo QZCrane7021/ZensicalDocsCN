@@ -1,49 +1,42 @@
 ---
 icon: lucide/clipboard-clock
 tags:
-  - Get started
+  - 开始使用
 ---
 
-# How to upgrade
+# 如何升级 { #how-to-upgrade }
 
-Check the [changelog] to identify the version you would like to upgrade to.
-Remember that Zensical uses [semantic versioning], so if you are upgrading
-from one major release version to another, please carefully study the
-information provided on [versioning] of Zensical.
+查看 [更新日志][changelog]，确定你想升级到的版本。要注意 Zensical 使用 [语义化版本命名法][semantic versioning]，因此如果你想从一个主版本升级到另一个主版本，请仔细阅读 Zensical 文档提供的 [版本规则信息][versioning]。
 
 [changelog]: https://github.com/zensical/zensical/releases
-[semantic versioning]: https://semver.org/
+[semantic versioning]: https://semver.org/lang/zh-CN/
 [versioning]: #versioning
 
-Once you are ready to proceed, follow the instructions according to how you
-installed Zensical:
+一旦你确定了要更新，请根据安装 Zensical 的方式，按以下教程操作：
 
-=== "with `pip`"
+=== "通过 `pip`"
 
-    Make sure you have the correct virtual environment activated that
-    you want to upgrade, then:
+    确保你正确激活了想要升级 Zensical 版本的虚拟环境，然后执行：
 
     ```
     pip install --upgrade --force-reinstall zensical
     ```
 
-    To show the currently installed version, use:
+    想要查看当前安装的版本，请执行：
 
     ```
     pip show zensical
     ```
 
-=== "with `uv`"
+=== "通过 `uv`"
 
-    With an existing lock file, uv will [stick to previous versions] until you
-    explicitly upgrade them. Run the following, replacing `<version>` with the
-    version you want to upgrade to.
+    如果环境中有锁文件，那么 uv 会 [保持先前的包版本][stick to previous versions] 除非你明确要升级。执行以下指令，但把 `<version>` 替换成你想要升级到的版本。
 
     ```
     uv lock --upgrade-package zensical==<version>
     ```
 
-    To show the currently installed version, use:
+    想要查看当前安装的版本，请执行：
 
     ```
     uv pip show zensical
@@ -51,9 +44,6 @@ installed Zensical:
 
 [stick to previous versions]: https://docs.astral.sh/uv/concepts/projects/sync/#upgrading-locked-package-versions
 
-## Versioning
+## 版本规则信息 { #versioning }
 
-Zensical follows [semantic versioning] and currently uses **0.0.x versioning**
-(alpha / development releases). We're approaching a **beta release**, after
-which we'll transition to **0.x** versioning. Once we reach a stable 1.0 release,
-the standard semantic versioning rules will apply more strictly.
+Zensical 采用了 [语义化版本命名法][semantic versioning]，目前采用形如 **0.0.x 的版本号** （适用于早期测试/开发版本）。我们即将发布 **成熟测试版本**，之后就会改用形如 **0.x** 的版本号。发布稳定的 1.0 版本后，我们将会更严格地采用标准的语义化版本命名法。

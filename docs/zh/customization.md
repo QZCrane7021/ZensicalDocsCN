@@ -1,8 +1,8 @@
 ---
 icon: lucide/drill
 tags:
-  - Get started
-  - Customization
+  - 开始使用
+  - 个性化
 ---
 
 # Customization

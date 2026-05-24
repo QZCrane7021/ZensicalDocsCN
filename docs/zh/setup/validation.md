@@ -1,16 +1,16 @@
 ---
 icon: lucide/scan-text
 tags:
-  - Setup
-  - Information architecture
+  - 设置
+  - 信息结构
 status: new
 ---
 
-# Validation
+# 链接校验 { #validation }
 
-Broken links are easy to miss – pages get renamed or moved, and references silently stop working. Zensical validates all internal links at build time by scanning every Markdown file and resolving all references: inline links, reference-style links, footnotes, link definitions, and anchors.
+有问题的链接很容易漏查 —— 页面重命名或者移动后，参照链接悄然失效。Zensical 会在构建时扫描每个 Markdown 文件，分析所有参照链接（例如内部链接、引用式链接、注脚、分离定义链接和锚点链接），检验它们是否有效。
 
-Additionally, the build can be aborted when issues are found by enabling [strict mode].
+此外，如果开启了 [严格模式][strict mode]，发生问题时，构建会被中断。
 
 ??? warning "Temporary limitations"
 

@@ -27,9 +27,9 @@ site_description: >-
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: zensical/zensical
-repo_url: https://github.com/zensical/zensical
-edit_uri: https://github.com/zensical/docs/edit/master/docs/
+repo_name: ZensicalDocsCN
+repo_url: https://github.com/QZCrane7021/ZensicalDocsCN
+edit_uri: https://github.com/QZCrane7021/ZensicalDocsCN/edit/master/docs/
 
 docs_dir: docs/zh
 
@@ -38,6 +38,7 @@ copyright: "&copy; 2025 - 2026 Zensical LLC"
 
 # Configuration
 theme:
+  language: zh
   name: material
   custom_dir: overrides
   features:
@@ -200,7 +201,7 @@ nav:
       - 站点设置:
           - 数据隐私: setup/data-privacy.md
           - 导航: setup/navigation.md
-          - 完整性检验: setup/validation.md
+          - 链接校验: setup/validation.md
           - 站内搜索: setup/search.md
           - 站点数据: setup/analytics.md
           - 社交链接卡: setup/social-cards.md
@@ -218,13 +219,13 @@ nav:
   - 撰写工具:
       - Markdown: authoring/markdown.md
       - 前文: authoring/frontmatter.md
-      - 提示: authoring/admonitions.md
+      - 提示块: authoring/admonitions.md
       - 按钮: authoring/buttons.md
       - 代码块: authoring/code-blocks.md
       - 分标签内容块: authoring/content-tabs.md
       - 数据表: authoring/data-tables.md
       - 图标: authoring/diagrams.md
-      - 角注: authoring/footnotes.md
+      - 注脚: authoring/footnotes.md
       - 格式化: authoring/formatting.md
       - 格式框架: authoring/grids.md
       - 图标和表情: authoring/icons-emojis.md
