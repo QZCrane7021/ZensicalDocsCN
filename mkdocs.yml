@@ -23,8 +23,7 @@ site_name: Zensical Documentation
 site_url: https://qzcrane7021.github.io/ZensicalDocsCN
 dev_addr: localhost:8000
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, in 60+ languages, for all devices
+  用 Markdown 撰写文档，仅需数分钟即可创建专业的静态网站 —— 而且可搜索、可个性化、支持 60 多种语言，且全设备均兼容
 
 # Repository
 repo_name: ZensicalDocsCN
@@ -152,8 +151,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: zensical
-      repo: zensical
+      user: QZCrane7021
+      repo: ZensicalDocsCN
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets

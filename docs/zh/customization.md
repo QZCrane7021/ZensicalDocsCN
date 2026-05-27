@@ -5,26 +5,17 @@ tags:
   - 个性化
 ---
 
-# Customization
+# 个性化 { #customization }
 
-Zensical makes it easy to get started with a modern documentation site. However,
-sometimes you may want to adjust the look and feel of your documentation to
-better match your project's branding or to add custom functionality. This guide
-explains how you can customize Zensical.
+Zensical 让用户得以轻松开始构建现代文档站点。然而，有时你可能想修改文档的外观或氛围，使之更符合你的项目品牌，或者加入自定义功能。本篇说明了你可以怎样个性化改造 Zensical。
 
-## Adding assets
+## 添加静态资源 { #adding-assets }
 
-Zensical offers several options for theme customization. To change the appearance
-of your pages, you can add your own CSS files located within your documentation
-directory. For more advanced modifications, you can include custom JavaScript
-code.
+Zensical 提供了多种主题个性化的选项。如果你想更改网页的外观，可以将自行写成的 CSS 文件添加到文档的目录中。如果想进行更高级的修改，也可以引入自定义的 JavaScript 代码。
 
-### Additional CSS
+### 添加 CSS { #additional-css }
 
-To customize the appearance of your site, you can add a custom style sheet that
-overrides or extends Zensical’s default styles. Whether you want to adjust the
-design or apply specific branding, simply place your style sheet file within the
-`docs` directory:
+要想个性化修改网站的外观，你可以添加一份自定义的样式表，以覆写或扩展 Zensical 的默认风格。无论是想修改设计还是加上具体的平拍，只需将样式表文件放在 `docs` 目录下即可：
 
 === "`zensical.toml`"
 
@@ -36,7 +27,7 @@ design or apply specific branding, simply place your style sheet file within the
     └─ zensical.toml
     ```
 
-    Then, add the following lines to `zensical.toml`:
+    然后在 `zensical.toml` 中添加如下内容：
 
     ``` toml
     [project]
@@ -53,18 +44,16 @@ design or apply specific branding, simply place your style sheet file within the
     └─ mkdocs.yml
     ```
 
-    Then, add the following lines to `mkdocs.yml`:
+    然后在 `mkdocs.yml` 中添加如下内容：
 
     ``` yaml
     extra_css:
       - stylesheets/extra.css
     ```
 
-### Additional JavaScript
+### 添加 JavaScript { #additional-javascript }
 
-To enhance your documentation with custom functionality or interactive features,
-you can add JavaScript files to your project. Place your custom scripts within
-the `docs` directory:
+要想新增自定义功能或者交互特性，以提升文档体验，你可以向项目中添加 JavaScript 文件。将自定义脚本放置在 `docs` 目录下：
 
 === "`zensical.toml`"
 
@@ -76,7 +65,7 @@ the `docs` directory:
     └─ zensical.toml
     ```
 
-    Then, add the following lines to `zensical.toml`:
+    然后在 `zensical.toml` 中添加如下内容：
 
     ``` toml
     [project]
@@ -93,22 +82,18 @@ the `docs` directory:
     └─ mkdocs.yml
     ```
 
-    Then, add the following lines to `mkdocs.yml`:
+    然后在 `mkdocs.yml` 中添加如下内容：
 
     ``` yaml
     extra_javascript:
       - javascripts/extra.js
     ```
 
-???+ tip "Making sure your JavaScript code runs at the right time"
+???+ tip "确保你的 JavaScript 代码在正确的时机运行"
 
-    It is likely that you will want to run some initialization code in your
-    JavaScript once the page has been fully loaded by the browser. This means
-    installing a callback function subscribing to events on the `document$`
-    observable exported by Zensical.
+    你有可能想在浏览器完全加载完网页后立刻运行 JavaScript 中的某些初始化代码。这意味着你需要设置一个回调函数，用于订阅由 Zensical 导出的 `document$` 可观察事件。
 
-    Using the `document$` observable is particularly important if you are using [instant navigation] since it will not result in a page refresh in the
-    browser, but subscribers on the observable will be notified.
+    [即时导航][instant navigation] 不会引起浏览器页面刷新，但订阅到可观察事件的函数会执行。如果你使用了这个特性，则尤其需要利用 `document$` 可观察事件。
 
     ``` javascript
     document$.subscribe(function() {
@@ -118,11 +103,9 @@ the `docs` directory:
 
   [instant navigation]: setup/navigation.md#instant-navigation
 
-#### Modules, `async`, `defer`
+#### 模块，`async` 和 `defer` { #modules-async-defer }
 
-If you want to import code as a [JavaScript module], you can simply make sure
-that the file has the `.mjs` extension or you can explicitly specify that it is
-to be loaded as a module:
+如果你想把自己的代码以 [JavaScript 模块][JavaScript module] 的形式导入，只要确保脚本文件的后缀名是 `.mjs`，或者指明它应该作为模块导入即可：
 
 [JavaScript module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -142,12 +125,9 @@ to be loaded as a module:
         type: module
     ```
 
-This configuration will result in a `type="module"` attribute being added to the
-`<script>` tag for the extra JavaScript.
+如此设置后，额外的 JavaScript 在引入时，其 `<script>` 标签会加上 `type="module"` 参数。
 
-Likewise, you can add [`defer`][defer] and [`async`][async] attributes to the
-script tag to further influence how the JavaScript is loaded. For example, for
-the `async` case:
+类似地，也可以给脚本标签添加 [`defer`][defer] 和 [`async`][async] 参数，深入影响 JavaScript 加载的方式。比如添加了 `async` 的情况：
 
 === "`zensical.toml`"
 
@@ -168,12 +148,9 @@ the `async` case:
   [defer]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script#defer
   [async]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script#async
 
-Note that Zensical will auto-detect modules by looking at the file extension
-only when the `extra_javascript` element is plain text. That means that if you
-want to load a module using `async`, you also need to specify the `type`
-attribute.
+需要注意，只有 `extra_javascript` 的参数完全空白，Zensical 才会根据文件后缀名自动检测模块。这意味着如果你想用 `async` 参数加载模块，就需要同时声明 `type` 参数。
 
-## Extending the theme
+## Extending the theme { #extending-the-theme }
 
 Zensical uses [MiniJinja], a Rust-based template engine inspired by Python’s
 popular [Jinja] system, to render the HTML structure of your site – including

@@ -7,11 +7,11 @@ tags:
 
 # 发布网站 { #publish your site }
 
-在 `git` 仓库中托管项目文档有一大优势，就是在收到新改动时能自动部署。Zensical 让这一切无比简单。
+在 `git` 仓库中托管项目文档有一大优势，就是收到新改动时能自动部署。Zensical 让这一切无比简单。
 
 ## GitHub Pages
 
-如果你的代码已经托管在 Github 上，用 [Github Pages] 发布项目文档显然最方便，无需付款，操作很简单。
+如果你的代码已经托管在 Github 上，用 [Github Pages] 发布项目文档，无需付款、操作简易，显然最方便。
 
   [GitHub Pages]: https://pages.github.com/
 

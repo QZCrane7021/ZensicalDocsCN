@@ -23,7 +23,7 @@ icon: lucide/message-circle-question-mark
 * [模板覆写][Template overrides] （也适用于自定义模板）
 * [第三方插件][Third-party plugins]
 
-我们暂未就 HTML 结构做出改动，因此你自定义的 CSS 和 JS 脚本依旧能正常生效。
+我们暂未就 HTML 结构做出改动，因此你自定义的 CSS 和 JavaScript 脚本依旧能正常生效。
 
   [command-line options]: https://zensical.org/compatibility/cli/
   [template overrides]: https://zensical.org/compatibility/overrides/
